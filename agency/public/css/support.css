@@ -1,0 +1,479 @@
+/* ===============================
+   GENERAL SETTINGS
+================================= */
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+  /* ----------banner---------*/
+
+.admission-banner {
+    position: relative;
+    padding: 100px 0 0;
+    background: linear-gradient(90deg, #002147, #004080);
+    color: #fff;
+    overflow: hidden; /* prevents content from breaking layout */
+    min-height: 200px; /* fix a stable banner height */
+    display: flex;
+  }
+  
+  .admission-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    gap: 40px;
+    height: 100%;
+  }
+  .admission-inner .badge {
+    position: absolute;
+    top: 20px;          /* distance from top */
+    left: 50%;          /* horizontal center */
+    transform: translateX(-50%); /* perfect centering */
+    background: #ff6b6b;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 18px;
+  }
+  .admission-text h1 {
+    align-self: start;   /* push text to top */
+    margin-top: 45px;    /* adjust how much higher you want */
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center; 
+  }
+  
+  .admission-text p {
+    align-self: start;   /* push text to top */
+    margin-top: 30px;    /* adjust how much higher you want */
+    text-align: center; 
+    font-size: 18px;
+    color: #f1f1f1;
+  }
+  
+  .admission-text .btn-primary {
+    background: #ff6b6b;
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    position: absolute;
+    bottom: 20px;          /* distance from top */
+    left: 30%;          /* horizontal center */
+    transform: translateX(-50%); /* perfect centering */
+    font-weight: 600;
+    transition: background 0.3s ease;
+
+  }
+  
+  .admission-text .btn-primary:hover {
+    background: #8d1d1d;
+  }
+  
+  .admission-image {
+    display: flex;
+    align-items: flex-end; /* push image to bottom */
+  }
+  .admission-image img {
+   max-width: 100%;
+   height: auto;
+   display: block;
+   object-fit: cover; /* crop properly */
+   margin-bottom: -4px; /* removes white line gap */
+
+  }
+  
+
+  .contact-register{padding:60px 0; background:#e6f4f9}
+  .contact-grid{ 
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 40px;
+    align-items: start;
+}
+.contact-info h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #002147;
+  }
+  .black-text {
+    color: #000; /* black */
+    font-weight: 700; /* bold for emphasis */
+  }
+
+  .contact-info p {
+    font-family: 'Pacifico', cursive;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+  }
+
+
+  .register-form{background:#fff; padding:18px; border-radius:12px; border:1px solid #eef2f6; box-shadow:var(--shadow)}
+  .register-form input, .register-form select, .register-form textarea{width:100%; padding:10px; border:1px solid #e6edf3; border-radius:8px; margin-bottom:10px}
+  .form-row{display:flex; gap:8px}
+
+
+    /* ---------- Features ---------- */
+    .features{padding:60px 0; background:#fff}
+    .features-inner {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      gap: 40px;
+      align-items: start;
+    }
+    .features-text h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 28px;
+      font-weight: 700;
+      margin-bottom: 16px;
+      color: #002147;
+    }
+    .black-text {
+      color: #000; /* black */
+      font-weight: 700; /* bold for emphasis */
+    }
+  
+    .features-text p {
+      font-family: 'Pacifico', cursive;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+    }
+    .features-image{  
+      max-width: 100%;
+      height: auto;
+      display: inline-block;
+      border-radius: 12px;  /* soft corners */
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* light shadow */
+  }
+  .features-image img {
+      max-width: 100%; 
+      height: auto;     /* keep aspect ratio */
+      display: block;   /* avoids inline spacing */
+      margin: 0 auto;   /* centers the image */
+    }
+  
+    /* ----------accomdation card-------------*/
+
+    .accommodation {
+        padding: 60px 0;
+        background: #f9fafc;
+        text-align: center;
+      }
+      
+      .accommodation-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #002147;
+        margin-bottom: 40px;
+      }
+      
+      .accommodation-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns */
+        gap: 30px;
+      }
+      
+      .accommodation-card {
+        background: #fff;
+        border-radius: 12px;
+        padding: 30px 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+      }
+      
+      .accommodation-card:hover {
+        transform: translateY(-6px);
+      }
+      
+      .accommodation-logo {
+        max-width: 200px;
+        margin-bottom: 20px;
+      }
+      
+      .accommodation-list {
+        list-style: none;
+        padding: 0;
+        margin: 0 0 20px 0;
+        text-align: left;
+      }
+      
+      .accommodation-list li {
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 8px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .accommodation-list i {
+           color: #e63946; 
+          font-size: 18px;
+      }
+      
+      .btn-primary {
+        background: #ff6b6b;
+        color: #fff;
+        padding: 10px 22px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.3s ease;
+      }
+      
+      .btn-primary:hover {
+        background: #8d1d1d;
+      }
+      
+      /* Responsive */
+      @media (max-width: 768px) {
+        .accommodation-grid {
+          grid-template-columns: 1fr; /* stack on small screens */
+        }
+      }
+      
+
+      /*---------------FAQ------------------*/
+      .faq-section {
+        padding: 60px 20px;
+        background: #f9f9f9;
+      }
+      
+      .faq-title {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: #002147;
+      }
+      
+      .faq-container {
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      .faq-card {
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+        overflow: hidden;
+        transition: all 0.3s ease;
+      }
+      
+      .faq-question {
+        padding: 16px 20px;
+        cursor: pointer;
+        font-weight: 600;
+        font-size: 18px;
+        color: #e63946;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .faq-question::after {
+        content: "+";
+        font-size: 20px;
+        transition: transform 0.3s ease;
+      }
+      
+      .faq-card.active .faq-question::after {
+        content: "-";
+      }
+      
+      .faq-answer {
+        font-family: 'Josefin Sans', sans-serif;
+        max-height: 0;
+        overflow: hidden;
+        padding: 0 20px;
+        background: #fff;
+        font-size: 16px;
+        color: #444;
+        line-height: 1.6;
+        transition: max-height 0.4s ease, padding 0.3s ease;
+      }
+      
+      .faq-card.active .faq-answer {
+        max-height: 300px; /* enough height */
+        padding: 16px 20px;
+      }
+      
+
+      /* Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .admission-inner,
+  .contact-grid,
+  .features-inner,
+  .accommodation-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .admission-text h1 {
+    font-size: 30px;
+  }
+  .admission-text p {
+    font-size: 16px;
+  }
+
+  .contact-info h2,
+  .features-text h2 {
+    font-size: 24px;
+  }
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .features-image {
+    order: -1; /* image on top for mobile */
+  }
+}
+
+/* Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+
+  .admission-banner {
+    padding: 30px 0 0;            /* smaller height */
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(90deg, #002147, #004080);
+    overflow: hidden;
+  }
+
+  .admission-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .admission-text {
+    order: 1;
+    text-align: center;
+    padding: 0 10px;             /* little horizontal padding for text */
+    margin-bottom: 10px;
+  }
+
+  .admission-text h1 {
+    font-size: 22px;
+    line-height: 1.3;
+    margin: 10px 0;
+  }
+
+  .admission-text p {
+    font-size: 14px;
+    margin: 10px 0 15px 0;
+  }
+
+  .admission-text .btn-primary {
+    display: inline-block;
+    margin: 15px auto;
+    position: static;
+    transform: none;
+  }
+
+  .admission-image {
+    order: 2;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .admission-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;           /* ensures full cover */
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .admission-inner .badge {
+    font-size: 14px;
+    padding: 4px 10px;
+    position: static;
+    transform: none;
+    margin-bottom: 8px;
+  }
+/* Make features text left-aligned on mobile */
+.features-text {
+  text-align: left !important;   /* ✅ force left align */
+  padding: 0 15px;               /* add small side padding */
+}
+
+.features-text h2 {
+  text-align: left !important;   /* ensure heading aligns left */
+}
+
+.features-text p {
+  text-align: left !important;   /* ensure paragraph aligns left */
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.contact-info {
+  text-align: left !important;   /* force text alignment */
+  padding-left: 0 !important;    /* remove inner spacing */
+  margin-left: 0 !important;     /* remove outer spacing */
+  width: 100%;
+}
+
+.contact-info h2 {
+  text-align: left !important;
+  margin-left: 0 !important;
+}
+
+.contact-info p {
+  text-align: left !important;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-left: 0 !important;
+}
+
+
+  .contact-register {
+    padding: 40px 20px;
+  }
+
+ 
+
+  .faq-title {
+    font-size: 22px;
+  }
+
+  .faq-question {
+    font-size: 16px;
+  }
+    .accommodation-card {
+    padding: 20px;
+  }
+  .accommodation-list li {
+    font-size: 15px;
+  }
+
+}
