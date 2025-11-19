@@ -22,3 +22,50 @@ Place screenshots in `agencyadmin/project_overview_agency` folder in your repo:
 ![Admin Panel](agencyadmin/project_overview_agency/screencapture-127-0-0-1-8000-view-inquiry-2025-11-19-14_16_29.png)
 ![australia](agencyadmin/project_overview_agency/screencapture-127-0-0-1-8000-scholarships-australia-2025-11-19-13_59_40.png)
 ![contact](agencyadmin/project_overview_agency/screencapture-127-0-0-1-8000-contact-2025-11-19-13_59_59.png)
+---
+
+## 🔹 Tech Stack
+- **Backend:** PHP, Laravel  
+- **Frontend:** HTML, CSS, Bootstrap, JavaScript  
+- **Database:** MySQL  
+- **Others:** Composer, Git
+
+---
+
+## 🔹 Installation Steps (Local Use)
+```bash
+# Clone the repository
+git clone https://github.com/omerlatifi/Agency_website_Laravel.git
+
+# Move into the project directory
+cd News-Portal
+
+# Install PHP dependencies
+composer install
+
+# Install Node.js dependencies and compile assets
+npm install
+npm run dev
+
+# Copy environment file
+cp .env.example .env
+
+# Generate Laravel app key
+php artisan key:generate
+
+# Run migrations
+php artisan migrate
+
+# Serve the project locally
+php artisan serve
+```
+---
+## 🔹Demo
+- **Local preview only:** Open http://127.0.0.1:8000 after running php artisan serve.
+---
+## 🔹Author
+- **Name:** Omer Latifi
+- **GitHub:** https://github.com/omerlatifi
+- **Portfolio:** https://yourportfolio.com
+---
+
